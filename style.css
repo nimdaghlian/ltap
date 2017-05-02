@@ -1,0 +1,360 @@
+
+  /* ######################## Shared ######################## */
+
+    * { box-sizing: border-box; }
+    body { 
+      background-color: #204056; 
+      padding: 0px;
+      margin: 0px;
+      font-family: 'Alegreya', serif;      
+
+    }
+    section {
+      float: left;
+      width: 100%;
+      min-height: 100vh;
+    }
+    p, #essay p, #classes p, h1, h2, h3 {
+      font-family: 'Alegreya', serif;      
+    }
+
+    li {
+      color: #204056;
+      line-height: 1.4em;
+      font-style: italic;
+      padding-right: 30px;
+    }
+    
+
+/* ######################## Menu ######################## */
+
+    #menu {
+      float: left;
+      height: 120px;
+      width: 100px;
+      position: fixed;
+      right: 20px;
+      top: 43%;
+    }
+    .menu-link {
+    display: block;
+    cursor: pointer;
+    float: left;
+    border-bottom: 5px #1d6496 solid;
+    height: 34px;
+    border-radius: 2px;
+    width: 100px;
+    margin: 10px;
+    /* padding: 10px; */
+    text-align: left;
+    color: #1d6496;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    }
+    .menu-link:hover {
+      color: indianred;
+      border-color: indianred;
+      cursor: pointer;
+    }
+    .menu-link:last {
+      /*float: right;*/
+    }
+    #hamburger {
+      display: none;
+    }
+    #about-linkx {
+      position: fixed;
+      display: inline-block;
+      z-index: 10;
+      mix-blend-mode: multiply;
+      background-blend-mode: multiply;
+      /*transform: rotate(-90deg);*/
+      /*top: 13.2rem;*/
+      bottom: 20px;
+    }
+
+    /* ######################## Tweets ######################## */
+
+    #tweets p { 
+      color: #f2f2e2;
+      font-family: 'Alegreya', serif;
+      font-weight: 400;
+      line-height: 34px;
+      letter-spacing: 1px;
+      font-size: 27px;
+      opacity: 0;
+      transition: opacity .5s ease-in-out, margin .25s ease-out;
+      -moz-transition: opacity .5s ease-in-out, margin .25s ease-out;
+      -webkit-transition: opacity .5s ease-in-out, margin .25s ease-out;
+      /* float: left; */
+      position: relative;
+      padding-top: 300px;
+      margin-bottom: -600px;
+      float: left;
+      max-width: 650px;
+   }
+    #tweets p.active-tweet {
+      opacity: 1;
+    }
+    #tweets p.full-tweet {
+      margin-bottom: 0px;
+    }
+    #tweet-container {
+      border-bottom: 4px solid whitesmoke;
+    }
+    #controls {
+      width: 100%;
+      text-align: center;
+      margin-top: 150px;
+      font-size: 24px;
+    }
+    #controls i, #controls p {
+      cursor: pointer;
+      display: inline-block;
+      color: #1d6496;
+      margin:0px 5px; 
+    }
+    #controls i:hover, #controls p:hover { color: white; }
+    #tweets {
+      min-height: 500px;
+      width: 650px;
+      margin: -30px auto;
+    }
+    span.htp { color: #1d6496 ; }
+
+    /* ######################## Essay ######################## */
+    #essay {
+      background-color: whitesmoke;
+      border-top: 14px solid #204056;
+      min-height: 700px;
+      padding-bottom: 400px;
+    }
+    #essay div, #about div{
+      max-width: 650px;
+      font-size: 22px;
+      margin: 15px auto;
+      font-family: 'Alegreya', serif;
+    }
+    #essay h1 {
+      margin-left: -40px;
+      font-size: 4em;
+      font-weight: 100;
+      line-height: 1em;
+      color: #204056;
+    }
+    #essay h2 {
+      color: #1d6496;
+      font-size: 2.4em;
+      line-height: 1.4em;
+      font-weight: 100;
+      line-height: 1.3em;
+      border-bottom: 1px #e0dede solid;
+      margin-top: 60px;
+      padding-bottom: 15px;
+      margin-left: -15px;
+    }
+
+    #essay a {
+      color: #1d6496;
+      text-decoration: none;
+    }
+
+    #essay a:hover {
+      color: indianred;
+    }
+    #essay h2 + p:first-letter {
+        color: #333;
+        float: left;
+        font-size: 70px;
+        line-height: 55px;
+        padding-right: 3px;
+        padding-left: 3px;
+        padding-top: 3px;
+    }
+    blockquote {
+      font-style: italic;
+    }
+
+    #mc_embed_signup {
+      border-top: 1px solid white;
+    }
+
+    #about {
+      background-color: #7b868e;
+      padding-top: 10vh;
+    }
+
+    #about div p {
+      font-size: 1.3em;
+      color: #333;
+    }
+
+    #about a {
+      text-decoration: none;
+      color: #1d6496;
+    }
+    #about a:hover {
+      color: indianred;
+    }
+
+    .separator {
+      text-align: center;
+    }
+
+    input.button {
+      background: transparent;
+      border-radius: 6px;
+      text-transform: uppercase;
+      border: 2px solid white;
+      color: white;
+      padding: 8px;
+      cursor: pointer;
+      margin: 10px;
+    }
+
+    input.button:hover {
+      border-color: indianred;
+      background-color: indianred;
+    }
+    .mc-field-group input {
+    line-height: 33px;
+    /* background: transparent; */
+    border: none;
+    /* border-bottom: 1px solid white; */
+    width: 30%;
+    margin-left: 15px;
+    color: white;
+    font-size: 20px;
+    background: #1d6496;
+    padding-left: 10px;
+    vertical-align: top;
+    width: 50%;
+    float: right;
+
+    }
+
+    #about .mc-field-group input {
+      background-color: whitesmoke;
+      color: #1d6496;
+    }
+    #essay-arrow {
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+    cursor: pointer;   
+    color: #204056; 
+    }
+    #essay-arrow:hover {
+      color: indianred;
+
+    }
+    #essay-body {
+      display: none;
+    }
+/* ######################## Classes ######################## */
+
+#classes div.classtype {
+  width: 60%;
+  padding: 65px;
+  margin: 50px auto;
+  border: 20px solid whitesmoke;
+  color: whitesmoke;
+  font-size: 2em;
+}
+
+#classes h2 {
+  color: indianred;
+}
+
+#classes h3 {
+  font-weight: 100;
+  font-style: italic;
+}
+/* ######################## Mobile ######################## */
+    @media screen and (max-device-width: 800px) {
+
+      #essay div {
+        padding: 0px 15px;
+      }
+      #essay h1 {
+        margin-left: 0px; 
+        font-size: 4em;
+        font-weight: 100;
+      }
+    #hamburger {
+        display: block;
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+        position: fixed;
+        top: 0px;
+        left: 10px;
+        line-height: 15px;
+        color: indianred;
+        text-align: center;
+        cursor: pointer;
+        z-index: 1501;
+      }
+      #menu {
+        float: left;
+        width: 100%;
+        min-height: 30px;
+        height: auto;
+        position: fixed;
+        background-color: #152938;
+        top: 0px;
+        right: 0px;
+        padding: 40px 20%;
+        z-index: 1500;
+        transition: height .5s ease-in-out;
+        -moz-transition: height .5s ease-in-out;
+        -webkit-transition: height .5s ease-in-out;
+        display: none;
+
+      }
+      .menu-link {
+        width: 95%;
+        margin: 10px auto;
+      }
+
+      #tweets {
+        width: 100%;
+        max-width: 100%;
+      }
+      #tweets p {
+        line-height: 42px;
+        letter-spacing: 1px;
+        font-size: 36px;
+        padding-right: 10%;
+        padding-left: 10%;
+        max-width: 100%;
+        overflow: hidden;
+      }
+      #controls {
+        position: absolute;
+        bottom: 60px;
+        height: 60px;
+      }
+      #controls i {
+        font-size: 60px;
+      }
+
+      #classes div.classtype {
+        width: 85%;
+        padding: 20px;
+        font-size: 1.7em;
+      }
+
+
+      .mc-field-group input {
+        width: 95%;
+        padding: 0 10%;
+      }
+      #mc_embed_signup div {
+        font-size: 25px;
+      }
+
+
+    }
