@@ -64,6 +64,12 @@
     #hamburger {
       display: none;
     }
+
+    #menu a.active {
+        color: indianred;
+        border-color: indianred;
+      }
+
     #about-linkx {
       position: fixed;
       display: inline-block;
@@ -318,7 +324,6 @@
         width: 95%;
         margin: 10px auto;
       }
-
       #tweets {
         width: 100%;
         max-width: 100%;
