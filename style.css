@@ -25,7 +25,9 @@
       padding-right: 30px;
     }
     
-
+    .trigger {
+      cursor: pointer;
+    }
 /* ######################## Menu ######################## */
 
     #menu {
@@ -107,9 +109,6 @@
     #tweets p.full-tweet {
       margin-bottom: 0px;
     }
-    #tweet-container {
-      border-bottom: 4px solid whitesmoke;
-    }
     #controls {
       width: 100%;
       text-align: center;
@@ -133,7 +132,6 @@
     /* ######################## Essay ######################## */
     #essay {
       background-color: whitesmoke;
-      border-top: 14px solid #204056;
       min-height: 700px;
       padding-bottom: 400px;
     }
@@ -188,7 +186,10 @@
     }
 
     #about {
-      background-color: #7b868e;
+      background-color: whitesmoke;
+      border-top: 10px dotted #204056;
+      border-bottom: 10px dotted #204056;
+
       padding-top: 10vh;
     }
 
@@ -225,14 +226,14 @@
       background-color: indianred;
     }
     .mc-field-group input {
-    line-height: 33px;
+    line-height: 25px;
     /* background: transparent; */
     border: none;
     /* border-bottom: 1px solid white; */
     width: 30%;
     margin-left: 15px;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     background: #1d6496;
     padding-left: 10px;
     vertical-align: top;
@@ -240,7 +241,6 @@
     float: right;
 
     }
-
     #about .mc-field-group input {
       background-color: whitesmoke;
       color: #1d6496;
@@ -261,26 +261,55 @@
     }
 /* ######################## Classes ######################## */
 
-#classes div.classtype {
-  width: 60%;
-  padding: 65px;
-  margin: 50px auto;
-  border: 20px solid whitesmoke;
-  color: whitesmoke;
-  font-size: 2em;
-}
+    #classes div.container {
+      width: 70%;
+      padding: 65px;
+      margin: 50px auto;
+      color: whitesmoke;
+      font-size: 1.5em;
+    }
 
-#classes h2 {
-  color: indianred;
-}
+    #classes img {
+      width: 50%;
+      margin-right: 5%;
+      float: left;
+      margin-bottom: 45px;
+    }
 
-#classes h3 {
-  font-weight: 100;
-  font-style: italic;
-}
+    #classes div.box {
+        /*border: 20px solid whitesmoke;*/
+        display: none;
+    }
+    #classes h1 {
+      color: indianred;
+      border-bottom: 1px solid white;
+      font-size: 2.2em;
+      line-height: 154%;
+      text-align: center;
+      clear: both;
+
+    }
+    #classes h2 {
+      color: indianred;
+      font-weight: 100;
+    }
+
+    #classes h3 {
+      font-weight: 100;
+      font-style: italic;
+    }
+
+
+
 /* ######################## Mobile ######################## */
     @media screen and (max-device-width: 800px) {
 
+      #classes div {
+        width: 100%;
+      }
+      #classes h1 {
+        font-size: 4em;
+      }
       #essay div {
         padding: 0px 15px;
       }
