@@ -106,6 +106,6 @@
        });
 
     $("#essay-arrow").click(function(){$('#essay-body').toggle()});
-    $("h1.subhead").click(function(){$(this).nextAll('div.box').toggle(); console.log('cholo');});
+    $('.trigger').click(function(){$(this).nextAll('.toggle').first().toggle(); console.log('cholo');});
 
   });
