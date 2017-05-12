@@ -8,10 +8,15 @@
     //   if ($(".active-tweet").next().length == 0){ $("#next").hide();} else{$("#next").show();}
     //   if ($(".active-tweet").prev().length == 0){ $("#prev").hide();} else{$("#prev").show();}
     // }
+    var sections = ["essay", "tweets", "classes", "about", "book"];
     var hash = location.hash.replace('#','');
     if (hash != "") {
       if ( hash == "undefined") {
         location.hash = "";
+        $('.tweet-text').random().addClass('active-tweet');
+      }
+      else if ($.inArray(hash, sections) > -1){
+        location.hash =("#"+sections[$.inArray(hash, sections)]);
         $('.tweet-text').random().addClass('active-tweet');
       }
       else if ($("#tweets #"+hash).length) {
@@ -69,8 +74,14 @@
      }
      $("#hamburger").click(function(){
       $("#menu").toggle();
+      $("#menu").addClass("mobile-menu");
+    });
 
-    })
+    $(".menu-link").click(function(){ 
+      $(".mobile-menu").toggle();
+     });
+
+    
     $("#prev").click(function(){showTweet('prev');}); 
     $("#next").click(function(){showTweet('next');}); 
     $("p.tweet-text").click(function(){showTweet('next');}); 

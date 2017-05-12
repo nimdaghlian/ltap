@@ -2,21 +2,22 @@
 <html>
 <head>
   <title>#howtopaint</title>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="http://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>  
+  <script src="script.js" ></script>  
+  <script src="scroll.js"></script>  
 
 </head>
 <body>
 
 <div id="menu">
-  <a href="#tweets" class="menu-link" >Tweets</a>
-  <a href="#essay" class="menu-link">Essay</a>
-  <a href="#classes" class="menu-link" >Classes</a>
-  <a href="#about" class="menu-link" >About</a>
-  <a href="#book" class="menu-link" style="display:none;" >Book</a>
+  <a href="#tweets" id="tweet-link" class="menu-link" >Tweets</a>
+  <a href="#about" id="about-link" class="menu-link" >About</a>
+  <a href="#essay" id="essay-link" class="menu-link">Essay</a>
+  <a href="#classes" id="class-link" class="menu-link" >Classes</a>
+  <a href="#book" id="book-link" class="menu-link" style="display:none;" >Book</a>
 </div>
   <div id="hamburger">
   _____
@@ -66,44 +67,65 @@
 <!-- / TWEETS -->
 <!-- ABOUT  -->
 <section id="about">
-<div>
+  <div>
 
-  <!-- <p class="separator"> &mdash; / &mdash; </p> -->
-  <h1> Some shit explaining what this site is about.</h1> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquam laoreet metus, id elementum tellus vulputate et. Mauris eros est, pulvinar vitae condimentum ac, laoreet tincidunt sem. Proin vel lacus mattis libero varius iaculis. Morbi rutrum porta tristique. Pellentesque pharetra vehicula ante, sed aliquam nibh condimentum ut. Morbi sapien sapien, convallis vitae aliquet eu, tempor nec purus. Quisque at dui quis turpis tempus facilisis non eget arcu. Cras rhoncus tincidunt lorem id pharetra. Morbi dignissim purus nec lacus convallis pretium.</p>
- <!--  <p>This site is a combination of things I've said about painting without thinking about them very hard and without taking them very seriously and writing about painting that I've thought about harder and more seriously than almost anything else I've ever written. The material all developed over between 2015 and 2017 while I was working a lot on a <a href="http://wunnan.com/natura-morta" target="_blank">few</a> <a href="http://wunnan.com/pictures-of-flowers" target="_blank">series</a> of <a href="http://wunnan.com/paint-landscaping" target="_blank">paintings</a>. This project exists to spread the ideas laid out in both shit-taking form and essay form. Classes begin in early summer 2017, and more programs and projects will follow. If you'd like to be notified about them, sign up here.</p>
-  <p>Set in <a href="https://fonts.google.com/specimen/Alegreya" target="_blank">Alegreya</a>, entirely static and written by hand because that's faster than even <em>picking</em> a goddamn framework and I'm a goddamn <em>artist</em>.</p>
-  <p>Oh yeah and my name's N&iacute;m, and you can see my other work <a href="http://wunnan.com/" target="_blank">here.</a> -->
-    <!-- <p class="separator"> &mdash; \ &mdash; </p> -->
+      <!-- <p class="separator"> &mdash; / &mdash; </p> -->
+    <h1>painting.school is definitely about painting, but it&#8217;s not just about painting. </h1>
 
-</div>
+    <p>I made this site as a central place to collect my thoughts about the sort of work that happens in the studio, and to encourage others to do and think about that work. </p>
+
+    <h2 id="thetweets">The tweets</h2>
+
+    <p>I started some new paintings in 2015, and the studio quickly became the focus of my week in a way that it hadn&#8217;t been much since school. Unlike school, I had to go back and forth between regular life and the studio during this time. Most of these tweets started as advice to myself about how to stay in the headspace of taking painting seriously while recognizing that it&#8217;s a fundamentally absurd activity. I started tweeting these sarcastic nuggets with the hashtag <a href="https://twitter.com/search?q=%23howtopaint%20from%3Animwunnan&src=typd&lang=en" target="_blank">howtopaint</a>, because most of them were, in fact, the strategy I was following. The work wasn&#8217;t just putting paint on canvas, after all.</p>
+
+    <p>If you&#8217;re familiar with this kind of work in one field, you&#8217;ll recognize it in another discipline. The popularity of my dumb hashtag among my variously talented but non-painter friends was an encouraging sign.</p>
+
+    <h2 id="theessay">The Essay</h2>
+
+    <p>The essay <a href="the-thing-i-am-trying-to-do.html">featured here</a> is a non-sarcastic attempt to talk in detail about this work, and how it shows up in many fields. It is in part a response to a pair of essays written by Zadie Smith about the practice of writing and reading literature. The essays were published while I was in school, and what she said about being a writer resonated among my painter and sculptor friends. Watching that happen was a watershed moment for me in trying to understand the work that seemed to be at the center of many different disciplines that I was interested in. I owe many thanks to <a href="http://quotidianpress.storenvy.com/" target="_blank">Delphine Bedient</a> for her patient and fastidious reading as this essay developed, as well as Van Pham and <a href="https://vimeo.com/artradio" target="_blank">Dustin Zemel</a> for tolerating early drafts.</p>
+
+    <h2 id="therewillbeabook">There will be a book</h2>
+
+    <p>The tweets featured here are just a portion of the whole set. Sometime in late 2017 or early 2018, the full set from twitter, new, unpublished ones, and the essay will be collected in a handmade print edition that will be announced here and on the mailing list below.</p>
+
+    <h2>Colophon</h2>
+      <p>Set in <a href="https://fonts.google.com/specimen/Alegreya" target="_blank">Alegreya</a>, entirely static and written by hand because that's faster than even <em>picking</em> a goddamn framework and I'm a goddamn <em>artist</em>.</p>
+   <h2>Who Are You?</h2>
+
+   <p><a href="http://wunnan.com/" target="_blank">N&iacute;m Wunnan</a></p>
+        <!-- <p class="separator"> &mdash; \ &mdash; </p> -->
+
+  </div>
 
 <!-- Begin MailChimp Signup Form -->
-<div id="mc_embed_signup">
-<form action="//wunnan.us2.list-manage.com/subscribe/post?u=e96b7ac392915e55a83550eff&amp;id=6e8d3e8169&CLASSES=Beginners" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-  <h2>Notify Me When New Stuff Happens</h2>
-<div class="mc-field-group">
-  <label for="mce-EMAIL">Email Address </label>
-  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-<div class="mc-field-group">
-  <label for="mce-FNAME">First Name </label>
-  <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-</div>
-<div class="mc-field-group">
-  <label for="mce-LNAME">Last Name </label>
-  <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-</div>
-  <div id="mce-responses" class="clear">
-    <div class="response" id="mce-error-response" style="display:none"></div>
-    <div class="response" id="mce-success-response" style="display:none"></div>
-  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e96b7ac392915e55a83550eff_6e8d3e8169" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
 
-</form>
-</div>
+  <div id="mc_embed_signup ">
+  <h2 class="trigger">Notify Me When New Stuff Happens</h2>
+
+    <form action="//wunnan.us2.list-manage.com/subscribe/post?u=e96b7ac392915e55a83550eff&amp;id=6e8d3e8169&CLASSES=Beginners" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate toggle" style="display:none;" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+    <div class="mc-field-group">
+      <label for="mce-EMAIL">Email Address </label>
+      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+    </div>
+    <div class="mc-field-group">
+      <label for="mce-FNAME">First Name </label>
+      <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+    </div>
+    <div class="mc-field-group">
+      <label for="mce-LNAME">Last Name </label>
+      <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+    </div>
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e96b7ac392915e55a83550eff_6e8d3e8169" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+
+    </form>
+  </div>
 
 <!--End mc_embed_signup-->
 
@@ -118,7 +140,7 @@
     <br>
     <br>
     <br>
-    <blockquote>Painting is not the only discipline to say, in one way or another, that the real work is beyond the craft of the work. If you&rsquo;re not a painter, but some of the tweets above rang true for the particular thing you are trying to do, then you&rsquo;re familiar with this kind of work. This essay is about what that work seems to be, what it is like to do it within a discipline, and how different fields share this particular method. <a href="the-thing-i-am-trying-to-do.html">Here's an essay about that work, starting with painting but looking for it in many other places.</a></blockquote>
+    <blockquote>Painting is not the only discipline to say, in one way or another, that the real work is beyond the craft of the work. If you&rsquo;re not a painter, but some of the tweets above rang true for the particular thing you are trying to do, then you&rsquo;re familiar with this kind of work. <a href="the-thing-i-am-trying-to-do.html">This essay is about what that work seems to be, what it is like to do it within a discipline, and how different fields share this particular method.</a></blockquote>
     <br>
     <br>
     <br>
@@ -144,7 +166,7 @@
 <!-- beginners  -->
     <h1 class="subhead trigger">Beginners: June - Sept 2017</h1>
     <p>Once a week, $60 / month, flexible supply costs. Suitable for adults or teenagers.</p>
-    <p class="trigger" style="color:indianred;">Learn more</p>
+    <p class="trigger">Learn more</p>
 
 <div class="box toggle">
     <h3>Looking and technical skills</h3>
@@ -192,7 +214,7 @@
 <!-- transitioners -->
     <h1 class="subhead trigger">Transitioners: June - Sept 2017</h1>
     <p>Once a week with online support. $70 / month. </p>
-    <p class="trigger" style="color:indianred;">Learn more</p>
+    <p class="trigger">Learn more</p>
     <div class="box toggle">
 
     <p>This class is for students who have a developed practice in some non-painting field, art or otherwise, that serves them as a way of asking and answering questions about ideas and selves. Students should have a sense of their own interests and abilities that they want to bring to painting, and a desire to explore how the materials and methods of painting can expand or develop them. This class is more suitable for online students than the Beginner&#8217;s class. </p>

@@ -13,6 +13,7 @@
       float: left;
       width: 100%;
       min-height: 100vh;
+      padding: 40px 0px;
     }
     p, #essay p, #classes p, h1, h2, h3 {
       font-family: 'Alegreya', serif;      
@@ -28,6 +29,12 @@
     .trigger {
       cursor: pointer;
     }
+    h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
+
+    font-weight: normal;
+
+    }
+
 /* ######################## Menu ######################## */
 
     #menu {
@@ -54,6 +61,10 @@
     text-transform: uppercase;
     font-weight: 600;
     text-decoration: none;
+    }
+
+    #menu a.active {
+      color: indianred;
     }
     .menu-link:hover {
       color: indianred;
@@ -132,8 +143,8 @@
     /* ######################## Essay ######################## */
     #essay {
       background-color: whitesmoke;
-      min-height: 700px;
-      padding-bottom: 400px;
+      min-height: 100vh;
+      padding-bottom: 300px;
     }
     #essay div, #about div{
       max-width: 650px;
@@ -185,6 +196,8 @@
       border-top: 1px solid white;
     }
 
+    /* ######################## About ######################## */
+
     #about {
       background-color: whitesmoke;
       border-top: 10px dotted #204056;
@@ -198,14 +211,13 @@
       color: #333;
     }
 
-    #about a {
+    #about a, #about .trigger {
       text-decoration: none;
       color: #1d6496;
     }
-    #about a:hover {
+    #about a:hover, #about .trigger:hover {
       color: indianred;
     }
-
     .separator {
       text-align: center;
     }
@@ -242,8 +254,14 @@
 
     }
     #about .mc-field-group input {
-      background-color: whitesmoke;
+      background-color: white;
       color: #1d6496;
+    }
+
+    #about input.button {
+      background-color: #1d6496;
+      border-color: #204056;
+
     }
     #essay-arrow {
     text-align: center;
@@ -267,6 +285,7 @@
       margin: 50px auto;
       color: whitesmoke;
       font-size: 1.5em;
+      max-width: 1100px;
     }
 
     #classes img {
@@ -289,6 +308,12 @@
       clear: both;
 
     }
+    #classes p.trigger {
+      color: indianred;
+    }
+     #classes .trigger:hover{
+      color: #1d6496;
+    }
     #classes h2 {
       color: indianred;
       font-weight: 100;
@@ -304,12 +329,18 @@
 /* ######################## Mobile ######################## */
     @media screen and (max-device-width: 800px) {
 
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-size: 20px;
+      }
       #classes div {
         width: 100%;
       }
-      #classes h1 {
-        font-size: 4em;
-      }
+     
       #essay div {
         padding: 0px 15px;
       }
@@ -368,12 +399,18 @@
       }
       #controls {
         position: absolute;
-        bottom: 60px;
+        bottom: 70px;
         height: 60px;
       }
       #controls i {
         font-size: 60px;
       }
+     #controls i, #controls p {
+      cursor: pointer;
+      display: inline-block;
+      color: #1d6496;
+      margin:0px 45px; 
+    }
 
       #classes div.classtype {
         width: 85%;
@@ -389,6 +426,37 @@
       #mc_embed_signup div {
         font-size: 25px;
       }
+      h1, h1.subhead, #classes h1 {
+        font-size: 2em;
+      }
+
+/*      section {
+        box-sizing: border-box;
+        padding: 20px 8%;
+        width: 100%;
+      }*/
+/*      #essay div, #essay blockquote, #about div, #classes div { 
+        max-width: 100%;
+        width: 100%;
+
+        }*/
+
+      #essay blockquote {
+        width: 100%;
+        max-width: 100%; 
+        font-size: 2em; 
+        }
+      #classes div.container {
+      width: 85%;
+      padding: 25px;
+      margin: 20px auto;
+      color: whitesmoke;
+      font-size: 1.5em;
+            }
+    }
+    @media screen and (orientation:landscape) {
+      #tweets p { padding-top: 140px; }
 
 
     }
+
