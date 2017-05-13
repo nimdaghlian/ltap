@@ -388,6 +388,9 @@
         width: 100%;
         max-width: 100%;
       }
+      #tweet-container {
+        padding-top: 0px;
+      }
       #tweets p {
         line-height: 42px;
         letter-spacing: 1px;
@@ -454,7 +457,7 @@
       font-size: 1.5em;
             }
     }
-    @media screen and (orientation:landscape) {
+    @media screen and (max-device-width: 800px) and (orientation:landscape) {
       #tweets p { padding-top: 140px; }
 
 
