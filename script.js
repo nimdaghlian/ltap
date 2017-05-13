@@ -118,5 +118,5 @@
 
     $("#essay-arrow").click(function(){$('#essay-body').toggle()});
     $('.trigger').click(function(){$(this).nextAll('.toggle').first().toggle(); console.log('cholo');});
-
+    $("#essay-link").click(function(){window.location.href = "/the-thing-i-am-trying-to-do.html";});
   });

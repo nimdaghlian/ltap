@@ -94,6 +94,8 @@
       bottom: 20px;
     }
 
+
+
     /* ######################## Tweets ######################## */
 
     #tweets p { 
@@ -209,6 +211,7 @@
     #about div p {
       font-size: 1.3em;
       color: #333;
+      padding-left: 10px;
     }
 
     #about a, #about .trigger {
@@ -231,6 +234,11 @@
       padding: 8px;
       cursor: pointer;
       margin: 10px;
+    }
+
+    #about h1 {
+      color: indianred;
+
     }
 
     input.button:hover {
