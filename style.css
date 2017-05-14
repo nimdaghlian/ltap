@@ -122,6 +122,9 @@
     #tweets p.full-tweet {
       margin-bottom: 0px;
     }
+    #tweet-container {
+        padding-top: 0px;
+      }
     #controls {
       width: 100%;
       text-align: center;
@@ -396,9 +399,7 @@
         width: 100%;
         max-width: 100%;
       }
-      #tweet-container {
-        padding-top: 0px;
-      }
+
       #tweets p {
         line-height: 42px;
         letter-spacing: 1px;
