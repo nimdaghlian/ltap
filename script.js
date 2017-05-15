@@ -40,6 +40,7 @@
 
         newTweet.addClass('active-tweet');
         activeTweet.removeClass('active-tweet');
+        $("#tweet-link").addClass('active');
         location.hash = newTweet.attr("id");
         // checkControls();
 
@@ -72,14 +73,6 @@
           break;
       };    
      }
-     $("#hamburger").click(function(){
-      $("#menu").toggle();
-      $("#menu").addClass("mobile-menu");
-    });
-
-    $(".menu-link").click(function(){ 
-      $(".mobile-menu").toggle();
-     });
 
     
     $("#prev").click(function(){showTweet('prev');}); 
