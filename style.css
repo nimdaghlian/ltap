@@ -296,7 +296,7 @@
     }
 /* ######################## Classes ######################## */
 
-    #classes div.container {
+    #classes div.container, #colophon div.container {
       width: 70%;
       padding: 65px;
       margin: 50px auto;
@@ -325,8 +325,9 @@
       clear: both;
 
     }
-    #classes p.trigger {
+    #classes p.trigger, #classes a {
       color: indianred;
+      text-decoration: none;
     }
      #classes .trigger:hover{
       color: #1d6496;
@@ -340,8 +341,39 @@
       font-weight: 100;
       font-style: italic;
     }
+    #work-samples img {
+      width: 95%;
+      margin: 20px 2.5%;
+    }
+
+/*######################## footer ########################*/
 
 
+    #colophon {
+      background-color: #7b868e;
+      padding-top: 10vh;
+      text-align: center;
+      border-top: 1px solid #333;
+    }
+
+    #colophon div p {
+      font-size: .9em;
+      color: #333;
+      margin: 20px 40px;
+      }
+
+    #colophon a {
+      text-decoration: none;
+      color: #1d6496;
+    }
+
+    #colophon h2 {
+      color: #204056;
+      font-size: 1.3em;
+      border-bottom: 1px solid #204056;
+      line-height: 200%;
+      margin:5px 20px;
+    }
 
 /* ######################## Mobile ######################## */
     @media screen and (max-device-width: 800px) {
