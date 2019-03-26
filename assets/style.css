@@ -147,6 +147,16 @@
     }
     span.htp { color: #537e9c; }
 
+    /* ######################## Book ######################## */
+    #book {
+      border-top: 7px solid whitesmoke;
+      border-top-style: double;
+    }
+    #book a, #book h2 {
+      color: indianred;
+      text-decoration: none;
+    }
+
     /* ######################## Essay ######################## */
     #essay {
       background-color: whitesmoke;
@@ -161,14 +171,14 @@
     }
     #essay h1 {
       margin-left: -40px;
-      font-size: 4em;
+      font-size: 2.5em;
       font-weight: 100;
       line-height: 1em;
       color: #204056;
     }
     #essay h2 {
       color: #1d6496;
-      font-size: 2.4em;
+      font-size: 2em;
       line-height: 1.4em;
       font-weight: 100;
       line-height: 1.3em;
@@ -197,6 +207,7 @@
     }
     blockquote {
       font-style: italic;
+      font-size: .8em;
     }
 
     #mc_embed_signup {
@@ -207,9 +218,8 @@
 
     #about {
       background-color: whitesmoke;
-      border-top: 10px dotted #204056;
-      border-bottom: 10px dotted #204056;
-
+      border-top: 5px solid #204056;
+      border-top-style: double;
       padding-top: 10vh;
     }
 
@@ -217,6 +227,10 @@
       font-size: 1.3em;
       color: #333;
       padding-left: 10px;
+    }
+
+    #about h2, h3 {
+      color: indianred
     }
 
     #about a, #about .trigger {
@@ -298,7 +312,7 @@
     }
 /* ######################## Classes ######################## */
 
-    #classes div.container, #colophon div.container {
+    #classes div.container, #colophon div.container, #book div.container {
       width: 70%;
       padding: 65px;
       margin: 50px auto;

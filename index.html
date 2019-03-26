@@ -1,153 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>#howtopaint</title>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link href="http://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js" ></script>  
-  <script src="menu.js" ></script>  
-  <script src="scroll.js"></script>  
-  <!-- favicon bs -->
-  <link rel="apple-touch-icon" sizes="57x57"         href="/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60"         href="/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72"         href="/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76"         href="/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114"       href="/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120"       href="/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144"       href="/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152"       href="/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180"       href="/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32"    href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96"    href="/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16"    href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!-- favicon bs -->
-</head>
-<body>
+---
+title: Home
+layout: home
+---
 
-<div id="menu">
-  <a href="#tweets" id="tweet-link" class="menu-link active" >Tweets</a>
-  <a href="#about" id="about-link" class="menu-link" >About</a>
-  <a href="#essay" id="essay-link" class="menu-link">Essay</a>
-  <a href="#classes" id="class-link" class="menu-link" >Classes</a>
-  <a href="#book" id="book-link" class="menu-link" style="display:none;" >Book</a>
-</div>
-  <div id="hamburger">
-  _____
-  _____
-  _____
-</div>
+
 <section id="tweet-container">
-  <div id="tweets">
-      <p class="tweet-text" id="whatever-is-left">Put away or throw away everything that&rsquo;s not better than most things you&rsquo;ve made. Whatever&rsquo;s left is all you&rsquo;ve done. Sorry. <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="important-thoughts">Hard to stay focused on all these important thoughts and ideas without someone around to give me a trophy for having them. <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="thing">Part of doing something is not doing all the things that are not that thing. <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="mouth">Put very few things, or no things at all, in your mouth. <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="small-room">Instead of going to brunch or taking a nice hike, sit in a small room and doubt everything you&rsquo;ve ever done.<span class="htp">#howtopaint</span></p>
+{% assign tweets = site.data.tweets  %}
 
-      <p class="tweet-text" id="dream">If you dream about a color you&rsquo;ve never seen, you can&rsquo;t jot it down to remember without inventing it. <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="beautiful-music">why must this beautiful ambient music also remind me that i shall die alone as we all will <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="drunk">too drunk to paint or finally drunk enough to paint? <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="raw-metal">Turn on some metal and edit all those goddamn camera raw files you got gathering dust <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="smacking">Try not to damage one art by smacking another art into it <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="misery">Misery and death surround us today. They probably won't disappear tomorrow. Be gentle and work with gratitude. <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="work">Do the hardest work you know. Tell yourself it&rsquo;s not real work anyhow. <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="inconvenient">Sometimes cultivating inner harmony and spying on obscure knowledge just seems really inconvenient. <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="grinding">The hardest thing about grinding paint is remembering you can&rsquo;t eat it when it gets good. <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="dildo-in-a-sock">New worst find in my studio neighborhood: dildo wrapped in an old sock, on a rusty chain <span class="htp">#howtopaint</span>?</p>
-      <p class="tweet-text" id="ruin-everything">Don&rsquo;t do things that you know will ruin everything just out of thoughtlessness. <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="social-media">Social media is the inverse of work. <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="hams">If you have multiple paintings with ham in them, paint all the hams in one day to ensure consistent ham tone. <span class="htp">#howtopaint</span></p>
-      <p class="tweet-text" id="coffee">All you have to do is get good enough to do what the coffee wants you to do <span class="htp">#howtopaint</span></p>
-<p class="tweet-text" id="love">First I love all my ideas. Then I don&rsquo;t love any of my ideas. <span class="htp">#howtopaint</span></p>
-<p class="tweet-text" id="not-helping">Painting is like a romantic relationship. Whatever you're doing, it's not helping. <span class="htp">#howtopaint</span></p>
-<p class="tweet-text" id="relationship">It&rsquo;s not a serious relationship if we don&rsquo;t talk about painting. <span class="htp">#howtopaint</span></p>
-<p class="tweet-text" id="light">Sometimes you catch the light coming in when there&rsquo;s a good song on, and it&rsquo;s all right. <span class="htp">#howtopaint</span></p>
+<div id="tweets">
+{% for tweet in tweets  %}
+  <p class="tweet-text" id="{{tweet.slug}}">{{tweet.text}}<span class="htp">#howtopaint</span></p>
+{% endfor  %}
     </div>
 
-    <div id="controls">
-      <i id="prev" class="fa fa-hand-o-left" ></i>
-      <!-- <i id="show-all" class="fa fa-hand-o-down" ></i> -->
-      <!-- <i id="close" class="fa fa-hand-o-up" style=" display:none;"></i> -->
-      <i id="next" class="fa fa-hand-o-right" ></i>
-
-<!--       <p id="prev">Prev</p>
-      <p id="next">Next</p> -->
-<!--       <p id="show-all">Show All</p>
-      <p id="close" style="display: none;">Close</p> -->
-    </div>
-</section>
-<!-- / TWEETS -->
-<!-- ABOUT  -->
-<section id="about">
-  <div>
-
-      <!-- <p class="separator"> &mdash; / &mdash; </p> -->
-    <h1>About painting.school</h1>
-
-    <p>This site is definitely about painting, but it&#8217;s not just about painting. </p>
-
-    <p>Though this site and the associated classes, I hope to encourage conversation about the sort of work that happens in the studio. </p>
-
-    <p>If you&#8217;re a little curious, enjoy the tweets. If you&#8217;re more curious, read the <a href="the-thing-i-am-trying-to-do.html">essay</a>. If you want to get to work, check out the <a href="#classes">classes</a>. </p>
-
-    <h1 id="thetweets">The tweets</h1>
-
-    <p>I started some new paintings in 2015, and the studio quickly became the focus of my week in a way that it hadn&#8217;t been much since school. Unlike when I was in school, however, I had to go back and forth between my regular life and my studio. Because of this ongoing contrast, most of these tweets started as advice to myself about how to stay in the headspace of taking painting seriously while recognizing that it&#8217;s a fundamentally absurd activity. I started tweeting these half-sarcastic nuggets with the hashtag &#8220;<a href="https://twitter.com/search?q=%23howtopaint%20from%3Animwunnan&amp;src=typd&amp;lang=en">howtopaint</a>&#8221;, because most of them were, in fact, the strategy I was following. The work wasn&#8217;t really just putting paint on canvas, after all. </p>
-
-    <p>If you&#8217;re familiar with this kind of work in one field, you&#8217;ll recognize it in another discipline. The popularity of my dumb hashtag among my variously talented but non-painter friends was an encouraging sign.</p>
-
-    <h1 id="theessay">The essay</h1>
-
-    <p>The <a href="the-thing-i-am-trying-to-do.html">essay</a> featured here is a non-sarcastic attempt to talk in detail about this work, and how it shows up in many fields. It is in part a response to a pair of essays written by Zadie Smith about the practice of writing and reading literature. The essays were published while I was in school, and what she said about being a writer resonated among my painter and sculptor friends. Watching that happen was a watershed moment for me in trying to understand the work that seemed to be at the center of many different disciplines that I was interested in. I owe many thanks to <a href="http://quotidianpress.storenvy.com/">Delphine Bedient</a> for her patient and fastidious reading as this essay developed, as well as Van Pham and <a href="https://vimeo.com/artradio">Dustin Zemel</a> for tolerating early drafts.</p>
-
-    <h1 id="therewillbeabook">There will be a book</h1>
-
-    <p>The tweets featured here are just a portion of the whole collection. Sometime in late 2017 or early 2018, the full series, along with new and unpublished ones, will be collected with the essay in a handmade print edition that will be announced here and via the mailing list below.</p>
-        <!-- <p class="separator"> &mdash; \ &mdash; </p> -->
-
+  <div id="controls">
+    <i id="prev" class="fa fa-hand-o-left" ></i>
+    <i id="next" class="fa fa-hand-o-right" ></i>
   </div>
-
-<!-- Begin MailChimp Signup Form -->
-
-  <div id="mc_embed_signup ">
-  <a class="trigger">Sign up for updates ></a>
-
-    <form action="//wunnan.us2.list-manage.com/subscribe/post?u=e96b7ac392915e55a83550eff&amp;id=6e8d3e8169&CLASSES=Beginners" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate toggle" style="display:none;" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-    <div class="mc-field-group">
-      <label for="mce-EMAIL">Email Address </label>
-      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-    </div>
-    <div class="mc-field-group">
-      <label for="mce-FNAME">First Name </label>
-      <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-    </div>
-    <div class="mc-field-group">
-      <label for="mce-LNAME">Last Name </label>
-      <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-    </div>
-      <div id="mce-responses" class="clear">
-        <div class="response" id="mce-error-response" style="display:none"></div>
-        <div class="response" id="mce-success-response" style="display:none"></div>
-      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e96b7ac392915e55a83550eff_6e8d3e8169" tabindex="-1" value=""></div>
-        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </div>
-
-    </form>
-  </div>
-
-<!--End mc_embed_signup-->
-
 </section>
-<!-- /ABOUT -->
+
+{% for section in site.front-page  %}
+
+<section id="{{section.title}}">
+  <div class="container">
+  {{ section.content | markdownify}}
+  </div>
+</section>
+
+{% endfor %}
+
 <!-- ESSAY -->
 <section id="essay">
   <div>
@@ -170,70 +51,4 @@
   
 </section>
 <!-- / ESSAY -->
-<!-- CLASSES -->
-<section id="classes">
-  <div class="container">
-    <h1 >Painting, Drawing and Thinking</h1>
-    <img src="easel.jpg">
-    <p>Affordable courses in the practical skills and concepts of contemporary visual art.</p>
-    <p>Learn how to make interesting work that is an honest expression of your ideas and experience.</p>
-    <h3 >Classes are held in central Portland, OR.</h3>
-    <h3>Remote lessons can be individually arranged.</h3>
 
-<!-- beginners  -->
-    <h1 class="subhead">Beginners: June - Sept 2017</h1>
-    <p>This class is a way to learn the tenets of studio work along with practical skills that will give you the tools and clear the path if you want to continue your inquiry as an artist.</p>
-    <p>Once a week, $60 / month for three months, flexible supply costs. Suitable for adults or teenagers.</p>
-    <a href="beginners-class.html">Learn more</a>
-
-<!-- /beginners -->
-<!-- transitioners -->
-    <h1 class="subhead">Transitioners: June - Sept 2017</h1>
-    <p>This class is assumes that you already work on something that requires you to solve problems and create new ideas. We will look at the way that this works in painting and contemporary visual art, either as a way to enrich your main practice or as a viable start to becoming a Serious Painter &reg;.</p>
-    <p>Once a week with online support. $70 / month. </p>
-    <a href="transitioners-class.html">Learn more</a>
-
-    <h2 id="aboutthisschool">About this school</h2>
-
-    <p>I think the particular ways in which painting is difficult make it a useful practice. It is self-directed work that deals with change in a way that exposes the tension between direct experience and your expectations. If you want to progress, you have to continously sharpen your ability to observe yourself and the outside world and your relationship to it.</p>
-
-    <p>Doing so is a way to practice a conceptual framework that you can apply to other problems that can&#8217;t be solved with brute force, rote skill, or cheating.</p>
-
-    <p>This sort of practice is often at odds with the way we expect school work and study to be. I would like to thank my Sifu, Jamie Tan, for showing me how a simple and open way of teaching can cultivate this kind of thinking.</p>
-
-    <h2 id="yourinstructor">Your instructor</h2>
-    <p>Hi, I'm <a href="http://wunnan.com/" target="_blank">N&iacute;m Wunnan</a></p>
-    <img src="/images/headshot.jpg">
-
-
-    <p>I graduated in 2008 from Glasgow School of Art with a degree in painting, and have been working as an artist, writer, community organizer, and web developer in Portland, Oregon since then. From 2010 to 2015 I led a variety of art and educational projects through my organization <a href="http://www.research-club.org/" target="_blank">Research Club</a>, I have taught art classes for GSA in Scotland, SUN Community Schools here in Portland, and various classes at local code schools including <a href="http://www.hackoregon.org/courses" target="_blank">Hack Oregon</a>. </p>
-
-    <p>Classes will take place at my studio in Portland&#8217;s southeast industrial district.</p>
-
-    <p>Here are some samples of my work.</p>
-    <div id="work-samples">
-      <img src="/images/niche-niche.jpg">
-      <img src="/images/greg.jpg">
-      <img src="/images/gray-vase-rough.jpg">
-      <img src="/images/ryugyong-hotel.jpg">
-      <img src="/images/x.jpg">
-    </div>
-
-    </div>
-</section>
-<!-- /CLASSES -->
-<section id="colophon">
-  <div class="container">
-      <h2>Colophon</h2>
-      <p>Set in <a href="https://fonts.google.com/specimen/Alegreya" target="_blank">Alegreya</a>, entirely static and written by hand because that's faster than even <em>picking</em> a goddamn framework and I'm a goddamn <em>artist</em>.</p>
-         <h2>Who Are You?</h2>
-      <p><a href="http://wunnan.com/" target="_blank">N&iacute;m Wunnan</a></p>
-</div>
-</section>
-
-
-
-
-
-</body>
-</html>
