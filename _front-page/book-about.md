@@ -4,9 +4,12 @@ title: book
 
 ## About the book
 
+<img src="/images/htp-book-fan.jpg" style="width:50%; padding:25px 5%; float: left;">
+<img src="/images/htp-book-back.jpg" style="width:50%; padding:25px 5%; float: left;">
+
 Somehow my tweets have turned into a book. Features include not having to go onto Twitter, nearly as many new tweets as there are old ones, and an introduction, which you can read below.
 
-Available for pre-order from [Quotidian press](https://quotidianpress.storenvy.com/products/25805373-howtopaint){:target="blank"}. 
+Available from [Quotidian press](https://quotidianpress.storenvy.com/products/25805373-howtopaint){:target="blank"}. 
 
 ## Introduction
 
