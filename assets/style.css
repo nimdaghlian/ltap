@@ -3,7 +3,7 @@
 
     * { box-sizing: border-box; }
     body { 
-      background-color: #204056; 
+      background-color: whitesmoke; 
       padding: 0px;
       margin: 0px;
       font-family: 'Alegreya', serif;      
@@ -20,7 +20,7 @@
     }
 
     li {
-      color: #204056;
+      color: #333;
       line-height: 1.4em;
       font-style: italic;
       padding-right: 30px;
@@ -99,7 +99,7 @@
     /* ######################## Tweets ######################## */
 
     #tweets p { 
-      color: #f2f2e2;
+      color: indianred;
       font-family: 'Alegreya', serif;
       font-weight: 400;
       line-height: 34px;
@@ -174,7 +174,7 @@
       font-size: 2.5em;
       font-weight: 100;
       line-height: 1em;
-      color: #204056;
+      color: whitesmoke;
     }
     #essay h2 {
       color: #1d6496;
@@ -218,7 +218,7 @@
 
     #about {
       background-color: whitesmoke;
-      border-top: 5px solid #204056;
+      border-top: 5px solid whitesmoke;
       border-top-style: double;
       padding-top: 10vh;
     }
@@ -293,7 +293,7 @@
 
     #about input.button {
       background-color: #1d6496;
-      border-color: #204056;
+      border-color: whitesmoke;
 
     }
     #essay-arrow {
@@ -301,7 +301,7 @@
     width: 100%;
     font-size: 2em;
     cursor: pointer;   
-    color: #204056; 
+    color: whitesmoke; 
     }
     #essay-arrow:hover {
       color: indianred;
@@ -316,7 +316,7 @@
       width: 70%;
       padding: 65px;
       margin: 50px auto;
-      color: whitesmoke;
+      color: #333;
       font-size: 1.5em;
       max-width: 1100px;
     }
@@ -384,9 +384,9 @@
     }
 
     #colophon h2 {
-      color: #204056;
+      color: whitesmoke;
       font-size: 1.3em;
-      border-bottom: 1px solid #204056;
+      border-bottom: 1px solid whitesmoke;
       line-height: 200%;
       margin:5px 20px;
     }
