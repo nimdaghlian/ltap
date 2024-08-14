@@ -3,7 +3,7 @@
 
   * { box-sizing: border-box; }
   body { 
-    background-color: whitesmoke; 
+    background-color: red; 
     padding: 0px;
     margin: 0px;
     font-family: 'Alegreya', serif;      
@@ -38,21 +38,21 @@
 /* ######################## Menu ######################## */
 
   #menu {
-    float: right;
-    height: 80px;
-    width: 100%;
+    float: left;
+    height: 120px;
+    width: 100px;
     position: fixed;
-    background-color: whitesmoke;
-    border-bottom: 1px solid #537e9c;
-    padding: 15px;
+    right: 20px;
+    top: 43%;
   }
   .menu-link {
   display: block;
   cursor: pointer;
-  float: right;
+  float: left;
   border-bottom: 5px #537e9c solid;
   min-height: 34px;
   border-radius: 2px;
+  width: 100%;
   margin: 10px;
   text-align: left;
   color: #537e9c;
@@ -126,7 +126,6 @@
   }
   #tweet-container {
       padding-top: 0px;
-      width: 100%;
     }
   #controls {
     width: 100%;
@@ -541,5 +540,4 @@
 
 
   }
-
 
