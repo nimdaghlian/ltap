@@ -1,16 +1,187 @@
----
-title: Home
-layout: home
----
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>#howtopaint</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/style.css">
+  <script src="/assets/script.js" ></script>  
+  <script src="/assets/menu.js" ></script>  
+  <!-- favicon bs -->
+  <link rel="apple-touch-icon" sizes="57x57"         href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60"         href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72"         href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76"         href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114"       href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120"       href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144"       href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152"       href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180"       href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32"    href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96"    href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16"    href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preload" as="fetch" href="https://octothorp.es/?uri=https://www.letstalkaboutpaintings.com/">
+  <link rel="octo:octothorpe" href="hashtags">
+  <!-- favicon bs -->
+</head>
+ <script src="assets/scroll.js"></script>  
 
-<section id="tweet-container">
-{% assign tweets = site.data.tweets  %}
+<body class="home">
+<div id="menu">
+  <a href="#tweets" id="tweet-link" class="menu-link active" >Tweets</a>
+  <a href="#about" id="about-link" class="menu-link" >About</a>
+  <a href="#book" id="book-link" class="menu-link" >Book</a>
+  <a href="/ltap" id="podcast-link" class="menu-link" >Podcast</a>
+  <a href="/the-thing-i-am-trying-to-do" id="essay-link" class="menu-link">Essay</a>
+</div>
+  <div id="hamburger">
+  _____
+  _____
+  _____
+</div>
+
+    <section id="tweet-container">
+
 
 <div id="tweets">
-{% for tweet in tweets  %}
-  <p class="tweet-text" id="{{tweet.slug}}">{{tweet.text}}<span class="htp">#howtopaint</span></p>
-{% endfor  %}
+
+  <p class="tweet-text" id="wall-liar">Anyone who tells you you gotta be sober to paint a wall is a LIAR  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="scrappy-crap">Can't spell "scrappy" without "crap" but also who cares.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="dont-cant">I don't know how I did it and I can't photograph it.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="rubber-gloves">I have apparently forgotten how to put on rubber gloves.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="idea-god">If you have a good idea please god do it before you think about it.   <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="painting-twitter">just because you saw a good painting on twitter doesn't mean it's your friend, but damn that's a good painting  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="stop-thinking">Step one: become a painter. Step two: stop thinking you are anything more than a painter.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="staring-idiot">The best way to prevent people staring in yr studio windows from catching u doing something idiotic is to do some work once in a while  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="good-coffee">All you have to do is get good enough to do what the coffee wants you to do  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="hard-not-real">Do the hardest work you know. Tell yourself it’s not real work anyhow.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="dont-ruin">Don’t do things that you know will ruin everything just out of thoughtlessness.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="idea-love">First I love all my ideas. Then I don’t love any of my ideas.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="no-trophy">Hard to stay focused on all these important thoughts and ideas without someone around to give me a trophy for having them.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="color-dream">If you dream about a color you’ve never seen, you can’t jot it down to remember without inventing it.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="consistent-ham-tone">If you have multiple paintings with ham in them, paint all the hams in one day to ensure consistent ham tone.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="small-room">Instead of going to brunch or taking a nice hike, sit in a small room and doubt everything you’ve ever done. <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="relationship-painting">It’s not a serious relationship if we don’t talk about painting.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="misery-death">Misery and death surround us today. They probably won't be gone tomorrow. Be gentle and work with gratitude.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="dildo-old-sock">New worst find in my studio neighborhood: dildo wrapped in an old sock, on a rusty chain  ?<span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="not-helping">Painting is like a romantic relationship. Whatever you're doing, it's not helping.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="not-doing">Part of doing something is not doing all the things that are not that thing.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="put-away">Put away or throw away everything that’s not better than most things you’ve made. Whatever’s left is all you’ve done. Sorry.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="put-mouth">Put very few things, or no things at all, in your mouth.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="inverse-work">Social media is the inverse of work.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="inner-harmony">Sometimes cultivating inner harmony and spying on obscure knowledge just seems really inconvenient.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="catch-light">Sometimes you catch the light coming in when there’s a good song on, and it’s all right.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="grind-paint">The hardest thing about grinding paint is remembering you can’t eat it when it gets good.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="too-drunk-enough">too drunk to paint or finally drunk enough to paint?  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="art-smack">Try not to damage one art by smacking another art into it  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="raw-metal">Turn on some metal and edit all those goddamn camera raw files you got gathering dust  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="ambient-alone">why must this beautiful ambient music also remind me that i shall die alone as we all will  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="little-bugs">Little summer bugs <br> land in my paint <br> and then they die.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="look-worse">Well it doesn't look worse and there's more paint on it  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="fart-fat">Notice accidents in the studio. You will learn about yourself. Like how I just typed “fart” instead of “fat”  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="square-paintings">Make your paintings square. Easier to instagram.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="plant-metaphors">The plants in your studio are totally metaphors for your work. Also, they are actual plants, so fucking water them.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="california-cancer">Try to keep your trips to the art store down to one California cancer warning at a time.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="fall-ver">If you look at something in your studio and think, that’ll probably fall over one day. Yes, yes it will.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="wrong-right">To quote Justin Bieber "No Pooh Bear, it's wrong-right"  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="unfashionable">You're gonna have to do some very unfashionable things.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="hiking-mountain">We’ve been hiking for days. Why isn’t that mountain getting any closer?  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="national-ham">Moodily paints ham while the National plays in the background.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="no-quick">Nope. There is no quick way.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="all-day">Sometimes it takes all day to get there.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="paint-bagel">Still not sure if it’s worse to get paint in my bagel or bagel in my paint  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="paint-chips">Leave a bag of chips on your laptop, fine, but leave them on a painting — that’s just straight tacky.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="form-swallow">Form swallows function  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="bfa-waiter">Doesn't that waiter know I have a BFA??  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="fumes">Can't spell "fumes" without u and me  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="stick-quit">Sticking to it is for quitters.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="right-lazy">Find the right kind of laziness  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="not-not">It's not what you thought, but it's not this either.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="hard-purpose">hard to come up with these on purpose  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="loan-sucker">I might have taken ten years to pay off my student loans, but I can be entertained for hours drawing a rock so really who's the sucker here  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="dumpster-happy">once in art school after classes were out i saw custodians had climbed inside the dumpster outside the painting building & were smashing abandoned student artworks with sledgehammers. may we all find work that makes us as happy as they were that day   <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="moths-mice">The fact that there are moths & sometimes mice in my studio has prepared my brain to see shadows as possums & raccoons at night  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="google-studio">I just tried to google the location of something in my studio  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="webcomics">Please don’t let me stay in my studio reading webcomics past midnight  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="man-wolf">There is a man outside my studio howling like a wolf. Owww-wooo, not Wa-ooooo.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="weird-gravity">I live uphill from my studio. At night, I bike home harder. In the morning coast on downhill on yesterday’s leg power. Gravity is weird.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="floss-dont">I thought I had floss in my studio. I don’t. Damn.  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="trash-pretty">look there’s some duct tape with some beads stuck to it on the floor @ studio n i should throw it out but it looks cool understand me here  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="shitty-light">If you live somewhere with shitty light all day, then you don’t have to worry about rushing to the studio  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="dirt-bucket">Why do i even have a bucket of dirt in my studio?  <span class="htp">#howtopaint</span></p>
+
+  <p class="tweet-text" id="fireworks">Work hard & keep a studio in the right neighborhood & once in 5 yrs the city will set off fireworks when you walk out your door.  <span class="htp">#howtopaint</span></p>
+
     </div>
 
   <div id="controls">
@@ -19,16 +190,99 @@ layout: home
   </div>
 </section>
 
-{% for section in site.front-page  %}
 
-<section id="{{section.title}}">
+
+<section id="about">
   <div class="container">
-  {{ section.content | markdownify}}
+  <h1 id="lets-talk-about-paintings">Let’s Talk About Paintings</h1>
+
+<p>This site is home to a few projects that talk about paintings and the work they ask us to do, whether we are trying to make them or see them. It’s definitely about painting, but it’s also definitely about work. If you’re not a painter, but you do work that can be messy, uncooperative, or consistently surprising, it’s my hope that you’ll be able to relate to some of this.</p>
+
+<h2 id="the-projects">The projects</h2>
+
+<h3> #howtopaint</h3>
+
+<p>I tweet <a href="https://twitter.com/nimwunnan/status/671208043044990976" target="blank">easy</a> to <a href="https://twitter.com/nimwunnan/status/655524378969436160" target="blank">follow</a>, <a href="https://twitter.com/nimwunnan/status/764603990210293760" target="blank">step-by-step</a> <a href="https://twitter.com/nimwunnan/status/769689567683153920" target="blank">instructions</a> for making good paintings under the hashtag <a href="https://twitter.com/i/moments/921824804830773248" target="blank">#howtopaint</a>. If you prefer tweets to be physical objects, check out the <a href="#book">book</a>.</p>
+
+<h3 id="the-thing-i-am-trying-to-do">The Thing I am Trying to Do</h3>
+
+<p>Instructions didn’t work? That’s a pretty common problem. I went to school for painting and I’m still trying to follow the handful of instructions I got there. Learning something that changes as you do it is a strange kind of work, where you have to keep asking “what is the thing I’m trying to do here?” I tugged on the thread of that question so much that it unraveled <a href="/the-thing-i-am-trying-to-do">into this essay</a>.</p>
+
+<h3 id="conceptual-labor">Conceptual Labor</h3>
+
+<p>I first really learned about this kind of work through painting, but at the same time realized that it shows up in all sorts of different fields. So I jumped into action and, ten years later, wrote the <a href="http://conceptuallabor.com" target="blank">Theory of Conceptual Labor</a>.</p>
+
+<h3 id="lets-talk-about-paintings---a-podcast">Let’s Talk About Paintings - A Podcast</h3>
+
+<p><a href="/ltap"><img src="/images/ltap-cover.jpg" style="max-width: 620px;" alt="Cover image for Let's Talk About Paintings" /></a></p>
+
+<blockquote>
+  <blockquote>
+    <p>And we decided that it was better to look at paintings on the radio than on the television. On the TV screen nothing is ever still, and this movement stops painting being painting. Whereas on the radio we see nothing, but we can listen to silence. And every painting has its own silence.</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>— John Berger</p>
+  </blockquote>
+</blockquote>
+
+<p>I’m starting a podcast about paintings — individual, specific paintings. It’s called <em>Let’s Talk About Paintings</em>, and it comes out in winter of 2019. You can check out a preview of the first episode <a href="/ltap">here!</a></p>
+
+<p><em>Lol so some … things happened after the winter of 2019. I’m leaving this up as a little pilot light for this dream, but the podcast, clearly, is not a thing. Yet.</em></p>
+
+
   </div>
 </section>
 
-{% endfor %}
+
+
+<section id="book">
+  <div class="container">
+  <h2 id="about-the-book">About the book</h2>
+
+<p><img src="/images/htp-book-fan.jpg" style="width:50%; padding:25px 5%; float: left;" />
+<img src="/images/htp-book-back.jpg" style="width:50%; padding:25px 5%; float: left;" /></p>
+
+<p>Somehow my tweets have turned into a book. Features include not having to go onto Twitter, nearly as many new tweets as there are old ones, and an introduction, which you can read below.</p>
+
+<p>Available from <a href="https://quotidianpress.storenvy.com/products/25805373-howtopaint" target="blank">Quotidian press</a>.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>It is more than a little strange to me to have written a book of tweets, but I can’t deny that I put real care into these short statements. I would like to say it was an accident, because I don’t want people to think I care about Twitter. I’m a painter, I care about painting. Twitter exasperates and depresses me. However, painting does that too, so at least in this way they are similar activities.</p>
+
+<p>Painting does it with the intimacy of a loved one you can’t let go, but Twitter feels like that time that someone threw a quarter out of a moving car right at my head while I was biking. Arriving with the immediate, smarting pain in my temple was a deeper, cutting indignation that I had become, for a moment, connected to this drive-by idiocy. That I had something to do with the kind of person that would huck a quarter at a bicyclist out of the window of a mid-90s chevy.
+If my time in the studio leaves me grumpy, it’s because painting said something to me that I wasn’t quite ready to own up to. Even if painting’s being a dick about it, I know it’s right. Any resentment will catalyze into determination, and send me back to the studio. All my complaints are just that much moss gathering on the deep, stone foundation of love I have for the activity. I know some people feel this way about short statements on the internet. We all have our battles, but the campaigns we wage in the studio and on Twitter seemed, at first, too distant to ever overlap.</p>
+
+<p>Tweets are networked speech. What you say, while you say it, is who you are. There is no private thought. One-dimensional clarity rises to the top. Virality is truth. 
+The studio is a fortress of doubt where you build some slow, near-truth from the guts-outward. The thing-ness of paint rebuffs the fluttery notions of the self. It will tell you who you are, not the other way around.</p>
+
+<p>The idea of learning to paint from a hashtag was funny to me at first because of how obviously useless and arrogant it was. It was after the quick chuckle that I’d notice that I had just said something I believed in.</p>
+
+<p>Behind the belch and snark of Twitter, there’s a poetry to its distilled statements. Behind the poetics of the studio, there are the moments you drop your phone onto a freshly primed canvas. The thing that lies in the middle is a kind of work, and it’s not just for painters. You have to laugh at it but you can’t write it off. Or maybe it’s worth taking seriously, but you should have a sense of humor about it. That’s how to paint.</p>
+
+
+  </div>
+</section>
+
+
   
 </section>
 <!-- / ESSAY -->
 
+
+
+    <section id="colophon">
+  <div class="container">
+      <h2>Colophon</h2>
+      <p>Set in <a href="https://fonts.google.com/specimen/Alegreya" target="_blank">Alegreya</a>, made in <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</p>
+         <h2>Who Are You?</h2>
+      <p><a href="https://nimdaghlian.com/" target="_blank">N&iacute;m</a></p>
+</div>
+</section>
+
+  </body>
+
+</html>
